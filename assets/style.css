@@ -1,0 +1,21 @@
+/*imports google fonts monoton and bellota*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap');
+
+
+/*set the baseline styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Bellota Text', cursive;
+    font-weight: 400;
+}
+
+/*reduces the size of html font, so the rem goes from 16 to 10 pixels*/
+html {
+    font-size: 62.5%;
+}
