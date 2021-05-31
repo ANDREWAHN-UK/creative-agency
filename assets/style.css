@@ -293,6 +293,7 @@ html {
     align-items: center;
     padding: .5rem;
     cursor: pointer;
+    z-index: 50;
 }
 
 .story-btn-line{
@@ -313,5 +314,20 @@ html {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+.story-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.story-paragraph{
+    font-size: 1.8rem;
+    color: #eee;
+    text-align: justify;
+    letter-spacing: .1rem;
+    text-indent: 2rem;
 }
 
