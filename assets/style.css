@@ -294,8 +294,13 @@ html {
     padding: .5rem;
     cursor: pointer;
     z-index: 50;
+    transition: transform 0.5s;
 }
 
+.change.story-btn{
+    transform: rotate(420deg);
+
+}
 .story-btn-line{
     width: 100%;
     height: .1rem;
