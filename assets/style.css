@@ -21,8 +21,9 @@
 }
 
 /* removes the horizontal scrollbar */
-body{
+.container{
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -252,11 +253,11 @@ html {
 }
 
 .team-member-card:first-child {
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .team-member-card:last-child {
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 .team-member-img{
