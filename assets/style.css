@@ -475,3 +475,27 @@ html {
     color: #444;
     margin-top: 5rem;
 }
+
+
+/* button to scroll up */
+.scroll-up-btn{
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(50,231, 255, .8);
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color.5s;
+}
+
+/* hover effect for scroll up button */
+.scroll-up-btn:hover{
+    background-color: #91cdd4;
+}
+
