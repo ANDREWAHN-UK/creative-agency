@@ -382,7 +382,7 @@ html {
 }
 
 /* this container holds the image and the form  */
-/* perspecive creates a 3d effect */ 
+/* perspective creates a 3d effect */ 
 .form-container{
     width: 80%;
     height: 40%;
