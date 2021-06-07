@@ -238,6 +238,7 @@ html {
     height: 70%;
 }
 
+/* this is for each team member */
 .team-member-card{
     width: 35rem;
     background-color: #fffeee;
@@ -248,18 +249,22 @@ html {
     transform: opacity 0.5s;
 }
 
+/* upon mouse hover, adjusts the opacity, nice visual effect */
 .team-member-card:hover{
     opacity: 1;
 }
 
+/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
 .team-member-card:first-child {
     align-self: flex-end;
 }
 
+/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
 .team-member-card:last-child {
     align-self: flex-start;
 }
 
+/* adjusts the size of the photo used */
 .team-member-img{
     width: 100%;
     border-radius: .5rem;
@@ -296,6 +301,7 @@ html {
     letter-spacing: .2rem;
 }
 
+/* this styles the button, placing it top right of the team member card */
 .story-btn{
     width: 4rem;
     height: 4rem;
@@ -312,11 +318,12 @@ html {
     transition: transform 0.5s;
 }
 
+/* upon clicking, button spins */
 .change.story-btn{
     transform: rotate(450deg);
 }
 
-
+/* this is a little line that highlights the button positioning */
 .story-btn-line{
     width: 100%;
     height: .1rem;
@@ -361,3 +368,108 @@ html {
     text-indent: 2rem;
 }
 
+/* section-four */
+
+.section-4{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* this container holds the image and the form  */
+/* perspecive creates a 3d effect */ 
+.form-container{
+    width: 80%;
+    height: 40%;
+    background-color: #e5e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem -.4 rem #ccc;
+    border-radius: .5rem;
+    perspective: 100rem;  
+    
+}
+
+/* styles the envelope image */
+/* transform rotate with a positive value tilts the envelope as if the left edge is closer to the viewer */
+.form-img{
+    width: 55rem;
+    background-color: rgba(50,231, 255, .8);
+    padding: 5rem;
+    opacity: .8;
+    box-shadow: -3rem 3rem 4rem #aaa;
+    border-radius: 2.5rem;
+    transform: rotateY(20deg) ;    
+    transition: all .5s;
+}
+
+/* this hover effect moves the envelope up a bit, and keeps it angled awaye from the viewer, and moves the box shadow */
+.form-img:hover{
+    transform: translateY(-2rem) rotateY(20deg);
+    box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+/* styles the contact form  */
+/* transform rotate with a negative value tilts the envelope as if the left edge is closer to the viewer */
+.contact-form{
+    width: 45rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding:  3rem;
+    border-radius: 2.5rem;
+    box-shadow: 3rem 3rem 4 rem #aaa;
+    transform: rotateY(-20deg); 
+    transition: all .5s;
+}
+
+.contact-form:hover{
+    transform: translateY(-2rem) rotateY(-20deg);
+    box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+/* styles the writing area of the contact form */
+.contact-form input,
+.contact-form textarea{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 2.5rem;
+    box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
+}
+
+/* specifies the size of the text inoput area, not the email part etc */
+.contact-form textarea{
+    max-height: 15rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+/* styles the submit button */
+.contact-form input[type="submit"]{
+    background-color: rgba(50,231, 255, .8);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+/* hover effect for submit button */
+.contact-form input[type="submit"]:hover{
+    background-color: #91cdd4;
+}
+
+.copyright{
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    color: #444;
+    margin-top: 5rem;
+}
